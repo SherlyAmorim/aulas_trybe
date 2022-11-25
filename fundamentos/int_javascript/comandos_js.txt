@@ -26,3 +26,35 @@ else {
  condiao
 };
 
+
+FOR
+
+Estrutura de Repetição
+
+Sitaxe:
+
+let variavel = valor;
+
+for (let contador = valor inicial; contador <= valor final; contador + valor a ser acrescentado) //onde contador é uma variavel declarada para fazer o laço de repetição e o valor a ser acrescentado caso seja 1 pode ser substituído pelo ++
+
+ou seja:
+
+for (let contador = valor inicial; contador <= valor final; contador++) {
+	console.log(variavel * contador);
+}
+
+
+For com Array
+
+Recomenda-se a seguinte sintaxe:
+
+for (let contador = valor inicial; contador <= valor final; contador++) {                       
+	console.log(variavel * contador);
+IGNORAR A SINTAXE ACIMA
+
+for (let contador = 0; contador < variavel.lenght; contador += 1) {
+	console.log(variavel[contador]);
+}
+
+Essa mudança se dá pq o índice dos valores em arraysiniciam do 0 (zero), o .length pq independe da quantidade de valores e o +=1 (no lugar do ++) como boas práticas.
+
