@@ -26,3 +26,47 @@ else {
  condiao
 };
 
+
+
+
+Arrays (variáveis compostas)
+sintaxe
+
+let <variável> = [valor1, valor2, valor3];
+
+a declaração de variável é igual, porém o valor valor atribuído a variável, ao invés de ser 1 para cada variávell podem ser vários, porém sempre dentro de [] e cada um altomaticamente recebe um índice (ou chave) que começa 0 (zero).
+
+ao chamar a variável no console, aparecem todos os valores, caso vc não coloque o índice.
+
+Se souber quanto valores se tem dentro de um array, para acrescentar um novo valor basta utilizar o nº do próximo indice que estiver vazio, porém para não correr o risco de sobrescrever algum valor, o ideal é usar o .push após o nome da variável que assim o valor entrará automáticamente na ultima posição
+
+<variavel>[nº do indíce] = 'valor';
+ou
+<variavel>.push('valor');
+
+
+<variavel>.length : traz quantos elementos tem dentro do array
+
+<variavel>.sort() : traz os elementos do array ordenados, se for string em ordem alfabetica e se for número ordem crescente.
+
+<variavel>.sort() : traz os elementos do array ordenados, se fo
+<variavel[nº]> : traz o valor que encontra-se nna piosição informada.
+
+Array em laço de repetição for
+
+for (ler indice = 0; indice < variavel.length; indice += 1) {
+	console.log(variael[indice]);
+}
+
+let searchForFirst = variavel[0]; : traz o primeiro item do array
+
+let serchForLast = variavel[variavel.legth -1]; : traz o ultimo item do array
+
+variavel.unshift('valor'); : acrescenta 1 valor ao array, mas na primeira posição sem substracer
+
+variavel.pop(); : remove o ultimo valor do array
+
+variavel.shift(); : remove o primeiro valor do array
+
+
+indexOf = variavel.indexOf('valor'); : procura o indice dentro do array do valor informado
