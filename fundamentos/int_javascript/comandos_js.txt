@@ -26,7 +26,6 @@ else {
  condiao
 };
 
-
 OPERADORES LÓGICOS
 
 && -> And === && ===
@@ -48,8 +47,6 @@ switch (variável){
 	Default: para os casos que não se enquadrem em nenhum dos casos anteriores
 	-> console ou variável;
 }
-
-
 
 
 Arrays (variáveis compostas)
@@ -93,3 +90,4 @@ variavel.shift(); : remove o primeiro valor do array
 
 
 indexOf = variavel.indexOf('valor'); : procura o indice dentro do array do valor informado
+
