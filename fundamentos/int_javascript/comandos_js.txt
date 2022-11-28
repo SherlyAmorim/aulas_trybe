@@ -27,6 +27,29 @@ else {
 };
 
 
+OPERADORES LÓGICOS
+
+&& -> And === && ===
+|| -> Or === || ===
+! -> Not !===
+
+
+SWITCH e CASE
+
+let variável = 'valor';
+
+switch (variável){
+	case 'condição';
+	-> ai aqui ou coloca o console ou a variável a ser implementada;
+		break;
+	case 'outra condição';
+	-> console ou variável;
+		break;
+	Default: para os casos que não se enquadrem em nenhum dos casos anteriores
+	-> console ou variável;
+}
+
+
 
 
 Arrays (variáveis compostas)
