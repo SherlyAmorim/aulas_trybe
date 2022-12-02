@@ -26,6 +26,7 @@ else {
  condiao
 };
 
+
 OPERADORES LÓGICOS
 
 && -> And === && ===
@@ -49,6 +50,8 @@ switch (variável){
 }
 
 
+
+
 Arrays (variáveis compostas)
 sintaxe
 
@@ -69,14 +72,9 @@ ou
 
 <variavel>.sort() : traz os elementos do array ordenados, se for string em ordem alfabetica e se for número ordem crescente.
 
-<variavel>.sort() : traz os elementos do array ordenados, se fo
-<variavel[nº]> : traz o valor que encontra-se nna piosição informada.
 
-Array em laço de repetição for
+<variavel[nº]> : traz o valor que encontra-se na piosição informada.
 
-for (ler indice = 0; indice < variavel.length; indice += 1) {
-	console.log(variael[indice]);
-}
 
 let searchForFirst = variavel[0]; : traz o primeiro item do array
 
@@ -90,4 +88,26 @@ variavel.shift(); : remove o primeiro valor do array
 
 
 indexOf = variavel.indexOf('valor'); : procura o indice dentro do array do valor informado
+
+
+ARRAY COM LAÇO DE REPETIÇÃO FOR
+
+for (let indice = 0; indice < variavel.length; indice += 1) {
+	console.log(variael[indice]);
+}
+
+para realizar calculos aritméticos no array com for
+
+for (let contador = 1; contador <= <número de vezes para repetir> ; contador = contador + 1) sendo que contador = contador + 1 pode ser substituído por contador ++.
+{
+	console.log(<variavel> * contador);
+}
+
+outro exemplo para array com for:
+
+let <variavel> = [valor1, valor2, valor3];
+for (let indice = 0; indice < <variavel>.length; indice++){
+	let <variavel2> = "Mensagem, " + <variavel>[indice] + "!";
+	console.log(<variavel2>);
+}
 
