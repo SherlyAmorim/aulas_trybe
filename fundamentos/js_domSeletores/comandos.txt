@@ -43,7 +43,7 @@ documente.getElementById('nomeDoID').innerText = "Novo conteúdo"
 Usando essa sintaxe será alterado todo conteúdo antigo pelo novo.
 
 
-Trabalhando com Classes
+TRABALHANDO COM CLASSES
 
 getElementsByClassName esse comando é bem parecido com a getElementById, porém com ele podemos manipular listas e não apenas 1 elemento.
 
@@ -69,4 +69,21 @@ for (let index = 0; index < NomeDaVariavel.length; index += 1){
 
 Como no comando colocamos o [index], ele vai alterar dinâmicamente todos os elementos da lista enquanto for percorrendo eles.
 
+
+TRABALHANDO COM TAGS
+
+getElementsByTagName
+
+Esse comando tbm retorna listas e nunca um elemente sozinho. Na verdade retorna um elemento sozinho caso na lista contenha apenas 1 elemento, mas sempre em formato de lista (ou seja, usa-se prorpiedades de array).
+
+
+Para acessar os elementos de uma Tag usa-se a sintaxe:
+
+document.getElementsByTagName('Nome da Tag'); 
+
+[onde esse nome de tag pode ser p: parágrafo, div, span, etc]
+
+E para alterar o conteúdo da tag, usa-se a sintaxe:
+
+document.getElementsByTagName('Nome da Tag')[indice do elemento].innerText = 'Novo Conteúdo';
 
