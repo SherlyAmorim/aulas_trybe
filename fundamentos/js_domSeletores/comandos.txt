@@ -1,0 +1,72 @@
+Para usar o JS dentro do HTML temos que usar a tag <script> </script>
+Ai dentro dessa tag podemos colocar códigos JS como console.log(), function, for, etc.
+
+Porém, como boas práticas não codamos JS dentro do HTML, só chamamos o arquivo para que possam se conectar (assim como com o CSS), e codamos em um arquivo próprio para JS.
+
+sintaxe: 
+<script scr= "nomeDoArquivoJS"></script>
+
+Diferente do CSS que chamamos ele dentro do <head>, o JS deve ser chamado no final (último elemento)do <body>, pq é importante que todos os elementos HTML já tenham sido carregados antes de usarmos o JS.
+
+objeto document é onde fica guardada toda estrutura do HTML.
+
+Se no console digitarmos document conseguimos visualizar essa estrutura.
+Assim como se digitarmos document.body conseguimos visualizar a estrutura interna do body.
+
+document.getElementById
+
+esse é para acessarmos qualquer ID dentro de um HTML, porém devemos chamá-lo pelo JS e imprimir no console.log caso formos querer visualizar esse ID.
+
+sintaxe:
+console.log(documente.getElementById('nomeDoID'));
+
+
+Se quisermos acessar o CONTEÚDO do ID, precisamos colocar .innerHTML no comando.
+
+sintaxe:
+console.log(documente.getElementById('nomeDoID').innerHTML);
+
+com esse comando vem tudo que tem dentro do ID, inclusive sub-tags, caso quisermos apenas os textos (ignorando as tags) devemos usar, no lugar do .innerHTML o .innerText.
+
+sintaxe:
+console.log(documente.getElementById('nomeDoID').innerText);
+
+
+Se utilizarmos a sintaxe: console.log(documente.getElementById('nomeDoID').Style);
+Apresenta todos os estilos aplicados aquele ID, ou seja o CSS.
+
+Alterando conteúdo de um ID com o getElementById
+
+sintaxe: 
+documente.getElementById('nomeDoID').innerText = "Novo conteúdo"
+
+Usando essa sintaxe será alterado todo conteúdo antigo pelo novo.
+
+
+Trabalhando com Classes
+
+getElementsByClassName esse comando é bem parecido com a getElementById, porém com ele podemos manipular listas e não apenas 1 elemento.
+
+Obstante: o Element's' é no plural nesse caso.
+
+Quando acessamos uma Class com esse comando, é retornado um HTML Colection, mesmo que a Class tenha apenas 1 elemento dentro dela, a class nesse caso é considerada como um array com indices, onde caso tenha apanas 1 elemento nesta classe ele retornará com o indice [0].
+
+Ou seja, para alterar o conteúdo de algum elemento dentro do array, não podemos utilizar apenas o comando innerText como no anterior, pois ele não saberá qual elemento alterar, para isso temos que passar o indice do elemento.
+
+sintaxe:
+document.getElementsByClassName('Nome da Class')[o indice do elemento].innerText = 'Novo conteúdo';
+
+
+Caso queira alterar todos os elementos da lista, podemos manipular da mesma forma que fazemos com um array.
+Declarar em uma variável e percorre-la com um for.
+
+sintaxe:
+
+let NomeDaVariavel = document.getElementsByClassName('Nome da Class');
+for (let index = 0; index < NomeDaVariavel.length; index += 1){
+    NomeDaVariavel[index].innerText = 'Novo Conteúdo';
+}
+
+Como no comando colocamos o [index], ele vai alterar dinâmicamente todos os elementos da lista enquanto for percorrendo eles.
+
+
