@@ -34,3 +34,20 @@ width= tamanho que queremos a imagem (px);
 alt= descrição da imagem, para o caso dela não carregar;
 id= identificação única de uma tag;
 class= uma classe para estilizar todas as tags que pertencerem a mesma class;
+
+
+Links (Externos e Internos)
+
+Externo:
+
+<a href="endereco do link" target="_blank">Nome Do Link</a>
+Esse comando todo acima é para colocar um link externo onde ao clicar abrirá em uma nova aba, onde:
+<a> é a tag;
+href= o endereço da página que será direcionado;
+target=_black : para abrir em uma nova aba;
+
+Interno:
+
+Dentro da tag do local onde quer que o link direcione dentro da própria página, precisa ter um "id=", com isso o link fará referência ao "Id=" indicado e ao clicar será redirecionado para lá.
+
+<a href="#nomeDoId">Nome do Link</a>
