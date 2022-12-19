@@ -1,0 +1,53 @@
+Estrutura das tags
+
+<nomeTag atributo="valor">
+    conteúdo da tag
+</nomeTag>
+
+Tags 
+<html></html> : Tag raiz do documento (começa e termina com ela);
+<head></head>: Cabeçalho, aqui são colocadas informações que não aparecem na nossa página;
+<body></body>: Corpo, conteúdo visível na página;
+
+<h1></h1> maior título
+<h2></h2>: título um pouco menor que o h1
+Esses tamanhos de Títulos vão até o h6
+
+<p></p>: parágrafo
+<br>: quebra de linha
+<strong></strong>: negrito
+<em>: itálico
+
+<ul></ul>: lista não ordenada
+<ol></ol>: lista ordenada
+
+<li></li>: intens da lista
+
+<img src= >: imagem e colar o endereço da imagem
+
+
+Atributos
+
+lang= linguagem utilizada no documento;
+scr= caminho para imagens e outras páginas que precisamos acessar;
+width= tamanho que queremos a imagem (px);
+alt= descrição da imagem, para o caso dela não carregar;
+id= identificação única de uma tag;
+class= uma classe para estilizar todas as tags que pertencerem a mesma class;
+
+
+Links (Externos e Internos)
+
+Externo:
+
+<a href="endereco do link" target="_blank">Nome Do Link</a>
+Esse comando todo acima é para colocar um link externo onde ao clicar abrirá em uma nova aba, onde:
+<a> é a tag;
+href= o endereço da página que será direcionado;
+target=_black : para abrir em uma nova aba;
+
+Interno:
+
+Dentro da tag do local onde quer que o link direcione dentro da própria página, precisa ter um "id=", com isso o link fará referência ao "Id=" indicado e ao clicar será redirecionado para lá.
+
+<a href="#nomeDoId">Nome do Link</a>
