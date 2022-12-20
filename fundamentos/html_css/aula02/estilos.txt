@@ -2,6 +2,11 @@ Comandos para estilizar as tags
 
 site: CSS Zen Garden
 
+link para puxar o CSS para o HTML
+
+<link rel="stylesheet" type="text/css" href="nomeDoArquivoCss.css">
+
+
 color: Cor da fonte
 
 background-color: Cor no fundo (pode ser colocada com: rgb(red, green, blue - e passar valores entre parenteses), ou o nome da cor, ou #códigoDaCor)
