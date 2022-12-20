@@ -1,8 +1,23 @@
 Comandos para estilizar as tags
 
+site: CSS Zen Garden
+
 color: Cor da fonte
 
 background-color: Cor no fundo (pode ser colocada com: rgb(red, green, blue - e passar valores entre parenteses), ou o nome da cor, ou #códigoDaCor)
+
+font-family: Escolher fonte (interessante sempre colocar a fonte "sans-serif" como fonte reserva separado por uma vírgula após a fonte escolhida)
+
+font-size: Tamanho da fonte (podendo ser utilizada em px(pixel), em em(proporção), entre outras.
+
+font-weight: bold (deixar em negrito)
+font-style: italic (deixar em itálico)
+
+line-height: espaçamento entre linhas (px)
+
+text-align: orientação (centro, justificado, alinhado a esquerda, etc.)
+
+text-decoration: underline (sublinhado)
 
 #nomeDoId {
     Atribui estilos para esse Id
