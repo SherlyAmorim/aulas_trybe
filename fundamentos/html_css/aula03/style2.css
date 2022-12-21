@@ -4,10 +4,12 @@
 
 h1 {
     position: fixed;
+    left: 230px;
+    font-size: 50px;
 }
 
 .super-mario {
-    width: 200px;
+    width: 220px;
     top: 100px;
     left: 50px;
     position: absolute;
@@ -15,27 +17,30 @@ h1 {
 }
   
   .goomba {
-    width: 100px;
-    top: 400px;
+    width: 150px;
+    top: 410px;
     left: 200px;
     position: absolute;    
   }
   
   .baloon {
-    left: 300px;
+    left: 420px;
+    top: 200px;
     position: absolute;
     z-index: 1;
   }
   
   .speach {
     font-size: 25px;
-    left: 300px;
-    position: absolut;
+    left: 440px;
+    top: 235px;
+    position: absolute;
     z-index: 2;
   }
   
   .bowser {
     width: 200px;
-    top: 500px;
-    left: 1000px;
+    top: 350px;
+    left: 700px;
+    position: absolute;
   }
