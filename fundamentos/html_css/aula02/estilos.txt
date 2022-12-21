@@ -31,6 +31,11 @@ height: Altura, pode ser usado em px(fixo) ou % (porcentagem em relação a altu
 overflow: esconde tudo que excede a altura e largura definida... por padrão vem hidden, mas pode ser utilizado "auto" que assim cria um scroll automaticamente.
 overflow apenas pega largura e altura, caso queira 1 ou outro tem que utilizar o overflow-x ou overflow-y;
 
+position: absolut; (se quiser deixar fixado, para não subir com o scroll basta usar o position: fixed)
+
+z-index: ordem de sobreposição em números inteiros (1, 2, 3...)
+
+float: um elemento flutuante que vc pode posicionar com: left, rigth, etc.
 
 
 #nomeDoId {

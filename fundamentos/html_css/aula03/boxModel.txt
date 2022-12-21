@@ -14,4 +14,3 @@ border: é literalmente a borda, e pode ser estilizada com:
 - border-color: cor da borda, por padrão vem como currentcolor que no caso é a mesma cor do elemento.
 
 margin: um espaço reservado além da borda, não é afetada pela estilização do elemento e nem das padding e border;
-
