@@ -1,0 +1,19 @@
+Posicionamento de Elementos
+
+Quando utilizamos tags inline, precisamos estilizar os elementos pelo CSS se quiser coloca-los um sobre o outro.
+
+utilizamos os estilos:
+
+position: absolut; (se quiser deixar fixado, para não subir com o scroll basta usar o position: fixed)
+
+z-index: ordem de sobreposição em números inteiros (1, 2, 3...)
+
+float: um elemento flutuante que vc pode posicionar com: left, rigth, etc.
+
+Ao redor
+top: em px para posicionar a distância do topo;
+left: em px para posicionar a distância da esquerda;
+right: em px para posicionar a distância da direita;
+bottom: em px para posicionar a distância do rodapé;
+Não é obrigatório utilizar os 4, pode usar só os que foram necessários.
+
