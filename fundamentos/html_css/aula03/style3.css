@@ -1,0 +1,18 @@
+h1, p , li{
+    text-align: center;
+}
+
+.pseudo:hover {
+    background-color: aquamarine;
+}
+
+.pseudo:active {
+    font-family: monospace;
+    color: blueviolet;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+}
+
