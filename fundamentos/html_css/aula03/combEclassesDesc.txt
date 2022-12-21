@@ -1,0 +1,44 @@
+COMBINAÇÕES DE CLASSES
+
+Uma mesma classe pode ser utilizada em diferentes elementos (como: div, p, h1, etc)
+
+Vc pode colocar mais de 1 classe em um mesmo elemento, para o caso de querer realizar estilizações diferentes - ex: <p class="fato perigo"> onde fato é uma classe e perigo outra classe.
+No CSS ficaria da seguinte forma:
+.fato {
+
+}
+.perigo {
+
+}
+
+no CSS vc pode estilizar um elemente que contenha uma classe, sem estilizar os demais itens deste elemento que não tenham essa classe - ex:
+
+p.perigo {
+
+}
+
+nesse caso todos os paragrafos que tenham a classe perigo são estilizados e os paragrafis que não tem essa classe não serão.
+
+
+CLASSES DESCENDENTES
+
+Para estilizar elementos descendentes, basta declarar todos os elementos em ordem decrescente de "paternidade" - ex:
+
+ul li p {
+
+}
+
+Onde serão estilizados todos os p que são filhos de li que que são filhos de ul.
+Os demais p não serão estilizados.
+
+EM CLASSES DESCENDENTES  não se utiliza virgula entre os elementos declarados.
+
+
+JUNTANDO
+
+ul.ingrdientes li p {
+
+}
+
+Nesse caso serão estilizados todos os p que são filhos de li que que são filhos de ul que tenham uma classe denominada ingredientes.
+Os demais p não serão estilizados.
