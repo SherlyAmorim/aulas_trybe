@@ -23,4 +23,7 @@ Sua sintaxe é: NomeDoElemento:NomeDaPseudoClasse {
 
 :nth-of-type(n) - Seleciona 1 item dentro de 1 elemento e altera apenas ele, onde n= o número referente a posição do item dentro do elemento. 
 
+:nth-child(odd) - Apenas impares
+:nth-child(pair) - Apenas pares
+
 existem diversas pseudo classes, esses foram apenas 2 exemplos.
