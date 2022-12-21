@@ -1,0 +1,61 @@
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    color: red;
+}
+
+h1 em, h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: 800;
+}
+
+#linguagens li:not(:nth-child(n + 4)) {
+    color: blue;
+}
+
+.pink_bg {
+    background-color: pink;
+}
+
+#aliados li:hover a[href*=stackoverflow] {
+    font-weight: 900;
+    color: orange;
+}
+
+#aliados li:hover a[href*=w3schools] {
+    font-weight: 900;
+    color: green;
+}
+
+#aliados li:hover a[href*=mozilla] {
+    font-weight: 900;
+    color: black;
+}
+
+#aliados li:hover a[href*=devdocs] {
+    font-weight: 900;
+    color: yellow;
+}
+
+#aliados li:hover a[href*=betrybe] {
+    font-weight: 900;
+    color: rgb(92, 150, 92);
+}
