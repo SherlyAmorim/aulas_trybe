@@ -2,11 +2,11 @@ h1, p , li{
     text-align: center;
 }
 
-.pseudo:hover {
+li:hover {
     background-color: aquamarine;
 }
 
-.pseudo:active {
+li:active {
     font-family: monospace;
     color: blueviolet;
 }
