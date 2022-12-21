@@ -1,0 +1,16 @@
+Box Model
+
+Todos os elementos são renderizados no browzer como caixas.
+
+Onde existe ao redor de cada elemento um padding (caixa1), Border (caixa2) e Margin (caixa3).
+
+width e height (largura e altura) desconsideram essas "caixas", ou seja é exatamente do elemento.
+
+padding: um espaço entre o elemento e a borda;
+
+border: é literalmente a borda, e pode ser estilizada com:
+- border-width: largura e por padrão vem medium;
+- border-style: tipo de linha (solida, pontilhada, etc), por padrão vem none, por isso não vemos se não estilizarmos;
+- border-color: cor da borda, por padrão vem como currentcolor que no caso é a mesma cor do elemento.
+
+margin: um espaço reservado além da borda, não é afetada pela estilização do elemento e nem das padding e border;
