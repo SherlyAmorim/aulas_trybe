@@ -25,6 +25,9 @@ Esses tamanhos de Títulos vão até o h6
 
 <img src= >: imagem e colar o endereço da imagem
 
+<div></div>: É um conteiner, onde vc coloca partes do seu código com intenção de usando uma class estilizar tudo junto; É do estilo in block, ou seja, quando utilizá-la as demais palavras/frases ficam em cima ou em baixo, nunca na mesma linha é realmente um bloco. 
+
+<span></span>: É do tipo inline, ou seja, vc utiliza para estilizar 1 ou mais palavras, mas as demais palavras fora desta tag continuam em linha.
 
 Atributos
 

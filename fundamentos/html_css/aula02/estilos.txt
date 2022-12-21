@@ -24,6 +24,15 @@ text-align: orientação (centro, justificado, alinhado a esquerda, etc.)
 
 text-decoration: underline (sublinhado)
 
+width: largura, pode ser usado em px(fixo) ou % (porcentagem em relação a largura da página);
+
+height: Altura, pode ser usado em px(fixo) ou % (porcentagem em relação a altura da página);
+
+overflow: esconde tudo que excede a altura e largura definida... por padrão vem hidden, mas pode ser utilizado "auto" que assim cria um scroll automaticamente.
+overflow apenas pega largura e altura, caso queira 1 ou outro tem que utilizar o overflow-x ou overflow-y;
+
+
+
 #nomeDoId {
     Atribui estilos para esse Id
 }
