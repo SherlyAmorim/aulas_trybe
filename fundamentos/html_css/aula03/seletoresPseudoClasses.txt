@@ -1,0 +1,29 @@
+AGRUPAMENTOS E SELETORES
+
+Quando queremos estilizar da mesma forma os itens de 2 seletores diferentes basta declará-los juntos (separados por vírgulas) e aplicar a estilização, ex:
+
+p, div {
+    color: red;
+}
+
+No exemplo estamos aplicando a cor Red para todos os elementos de todos os paragrafos (p) e de todos os elementos de todas as divs (div) ao mesmo tempo.
+
+
+
+PSEUDO-CLASSES
+
+Sua sintaxe é: NomeDoElemento:NomeDaPseudoClasse {
+    estilização   
+}
+
+
+:hover - ao passar do mouse (acontece algo, por ex: pintar o background de alguma cor, ou colocar margem, etc)
+
+:active - ao clicar com o mouse (acontece a estilização configurada)
+
+:nth-of-type(n) - Seleciona 1 item dentro de 1 elemento e altera apenas ele, onde n= o número referente a posição do item dentro do elemento. 
+
+:nth-child(odd) - Apenas impares
+:nth-child(pair) - Apenas pares
+
+existem diversas pseudo classes, esses foram apenas 2 exemplos.
