@@ -21,4 +21,6 @@ Sua sintaxe é: NomeDoElemento:NomeDaPseudoClasse {
 
 :active - ao clicar com o mouse (acontece a estilização configurada)
 
+:nth-of-type(n) - Seleciona 1 item dentro de 1 elemento e altera apenas ele, onde n= o número referente a posição do item dentro do elemento. 
+
 existem diversas pseudo classes, esses foram apenas 2 exemplos.
