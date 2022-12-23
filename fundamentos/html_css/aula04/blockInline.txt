@@ -31,3 +31,17 @@ Exemplos: a, span, b, i, etc...
 * Ao aplocar float, automaticamente se transforma em elemento block;
 
 * Se comporta como um texto;
+
+
+INLINE BLOCK
+
+Mistura dos 2.
+
+* Ocupam a largura do próprio conteúdo;
+
+* Dois ou mais elementos em sequência, são posicionados lado a lado;
+
+* É possível alterar tamanho e largura; 
+
+* É possível altear todas as propriedades de margem;
+
