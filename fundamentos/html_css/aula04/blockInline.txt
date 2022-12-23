@@ -1,0 +1,33 @@
+DIFERENÇA DE ELEMENTOS BLOCK E INLINE
+
+ELEMENTOS BLOCK
+
+Exemplos: div, section, ul, li, header, p, etc...
+
+* Ocupam 100% da largura do elemento pai (mesmo que o conteúdo ocupe menos espaço, a largura separada para ele é a mesma do pai);
+
+* Ocupam a própria linha, sendo posicionado abaixo ou acima de outros elementos.
+
+* A altura padrão é definida pelo tamanho do conteúdo - o ideal é deixar por padrão;
+
+* é possível alterar largura e altura;
+
+* é possível alterar as propriedade des margem;
+
+
+
+ELEMENTOS INLINE
+
+Exemplos: a, span, b, i, etc...
+
+* Ocupam a largura do próprio conteúdo;
+
+* Dois ou mais elementos inline em sequência são posicionados lado a lado;
+
+* Não é possível alterar a propriedade de altura e largura;
+
+* Somente é possível alterar as margens horizontáis;
+
+* Ao aplocar float, automaticamente se transforma em elemento block;
+
+* Se comporta como um texto;
