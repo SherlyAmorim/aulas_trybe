@@ -1,0 +1,16 @@
+Condições if e Else
+
+sintaxe:
+
+if (condicao){
+ código
+}
+else if (outraCondiao) {
+ outro condicao
+}
+else if (outraCondiao) {
+ outro condicao
+}
+else {
+ condiao
+};
