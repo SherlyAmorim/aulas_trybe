@@ -1,0 +1,27 @@
+HTML SEMÂNTICO
+
+É basicamente usar as tags apropriadas para as funções que ela foram desenvolvidas, ex: 
+img: para imagem
+p: para parágrafo
+table: para tabelas
+
+O html semântico não diz respeito a estrutura da página em sí. Ele foi criado para padronizar o desenvolvimento de páginas web e ajudar na questão inclusiva.
+...
+
+ALGUMAS TAGS SEMÂNTICAS
+
+header: Cabeçalho (em qualquer parte da página que tenha um caçalho, e não apenas no início da página);
+
+nav: para links de navegação, dentro da própria página, ou externas;
+
+main: para a parte principal da página, onde estiver todo o conteúdo, podendo agrupar algumas tags dentro dela como filhas;
+
+article: é uma tag autocontida, ou seja, o que for colocado dentro dela tem que fazer sentido isoladamente, ou seja, vc pode trocar ele de local na página que não vai fazer diferença, ele não é diretamente ligado a outras informações da página;
+
+section: para seções dentro de algo;
+
+aside: para barras laterais;
+
+footer: para ropadés.
+
+site com todas as tags SEMÂNTICAS: htmlreference.io
