@@ -1,0 +1,20 @@
+JavaScript é uma liguagem de programação que tem tipagem dinâmica, ou sea identifica o tipo de variável apenas pelo valor atribuído, não precisando com isso que declaremos o tipo de variável, apenas atribuir um nome e valor a elas.
+
+tipos primitivos:
+
+string literal
+number literal
+boolean (true or false)
+undefined (indefinida, quando vc declara uma variável sem atribuir nenhum valor)
+null (vazia, quando vc declara uma variável e atribuimos um valor null - significa que está vazia para ser atribuído depois)
+
+= : Atribuição;
+== : igualdade de valor;
+=== : igual de valor e tipo de variável;
+
+
+OPERADORES LÓGICOS
+
+&& -> And === && ===
+|| -> Or === || ===
+! -> Not !===
