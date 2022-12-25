@@ -1,0 +1,58 @@
+O for/of nos permite criar loops em objetos iteráveis como strings, arrays, entre outros
+
+Sintaxe:
+
+let variavel = [valor1, valor2, valor3];
+for(let valor of variavel) {
+  console.log(valor);
+}
+
+O resultado será a impressão dos valores de dentro do Array.
+Ex: 
+valor1
+valor2
+valor3
+
+===============================================
+
+Exemplos com valores:
+
+let word = 'Hello';
+for (let letter of word) {
+  console.log(letter);
+}
+esultado:
+"H"
+"e"
+"l"
+"l"
+"o"
+
+----------------------------------------
+
+let numeros = [1,2,3,4,5];
+for(let numero of numeros) {
+  console.log(numero);
+}
+
+resultado: 
+1
+2
+3
+4
+5
+
+===============================================
+
+Pode tbm somar valores do Array com a sintaxe:
+
+let arrOfNumbers = [10, 20, 30];
+for (let sum of arrOfNumbers) {
+  sum += 1;
+  console.log(sum);
+}
+// 11
+// 21
+// 31
+
+

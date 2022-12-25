@@ -1,0 +1,27 @@
+WHILE (Enquanto)
+
+Executa a iteração com apenas 1 condição, diferente do For que precisa de 3.
+
+Enquanto a condição do escopo for verdadeira ele continua iterando.
+
+Sintaxe:
+
+let variavel = valor;
+
+while(variavel !== valor) {
+  variavel += 1;
+}
+
+
+OBS: Com essa condicional é fácil cair em loop infinito, por exemplo:
+
+let counter = 0;
+
+while(counter !== 5) {
+  counter += 1;
+}
+
+Neste caso o código rodaria até a variavel chegar ao valor 5, mas se ao invés de 0 ela começasse com 6, cairia em Loop Infinito, pois nunca alcançaria o número 5.
+
+
+PODEMOS PARAR UM LOOP INFINITO COM O COMANDO break

@@ -1,0 +1,27 @@
+LOOP FOR
+
+Sintaxe
+
+for (let contador = 1; contador <= <número de vezes para repetir> ; contador += 1){
+
+}
+
+PARA REALIZAR CALCULOS ARITMÉTICOS COM FOR:
+
+for (let contador = 1; contador <= <número de vezes para repetir> ; contador += 1){
+	console.log(<variavel> * contador);
+}
+
+ARRAY COM LAÇO DE REPETIÇÃO FOR:
+
+for (let indice = 0; indice < variavel.length; indice += 1) {
+	console.log(variael[indice]);
+}
+
+OUTRO EX PARA ARRAY COM FOR:
+
+let <variavel> = [valor1, valor2, valor3];
+for (let indice = 0; indice < <variavel>.length; indice++){
+	let <variavel2> = "Mensagem, " + <variavel>[indice] + "!";
+	console.log(<variavel2>);
+}
