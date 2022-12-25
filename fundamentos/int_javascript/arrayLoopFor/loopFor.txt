@@ -1,0 +1,20 @@
+ARRAY COM LAÇO DE REPETIÇÃO FOR
+
+for (let indice = 0; indice < variavel.length; indice += 1) {
+	console.log(variael[indice]);
+}
+
+para realizar calculos aritméticos no array com for
+
+for (let contador = 1; contador <= <número de vezes para repetir> ; contador = contador + 1) sendo que contador = contador + 1 pode ser substituído por contador ++.
+{
+	console.log(<variavel> * contador);
+}
+
+outro exemplo para array com for:
+
+let <variavel> = [valor1, valor2, valor3];
+for (let indice = 0; indice < <variavel>.length; indice++){
+	let <variavel2> = "Mensagem, " + <variavel>[indice] + "!";
+	console.log(<variavel2>);
+}
