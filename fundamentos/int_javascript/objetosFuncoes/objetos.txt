@@ -1,0 +1,114 @@
+OBJETOS
+
+Objetos são entidades independentes, com propriedades e tipos;
+
+Propriedade é a associação entre uma chave e um valor;
+
+Sintaxe:
+
+declaração nomeDoObjeto = {
+    chave: valor;
+    chave2: valor2;
+    .
+    .
+    .
+};
+
+Ex: 
+let car = {
+    type: 'Fiat',
+    model: '500',
+    color: 'White',
+};
+
+Onde: 
+let é a declaração;
+car é o objeto;
+type, model, color: são as chaves;
+Fiat, 500, White: são os valores.
+
+
+Para acessar as chaves dentro de um objeto usamos . ou [ ];
+ou seja, car.type ou car[type]
+
+se for um array, só dá para acessar com o [' '] e utilizando ' ', se tentar acessar com . retornará um erro.
+
+
+OBJETOS DENTRO DE OBJETOS
+
+Uma chave pode ser um outro objeto que grada chaves e valores, como por exemplo:
+
+let conta = {
+  agencia: '0000',
+  banco: {
+    cod: '012',
+    id: 4,
+    nome: 'TrybeBank',
+  },
+};
+
+Nesse exemplo existe o objeto conta e dentro do conta existe o objeto banco.
+
+para acessar as informações pode ser usado o . ou [ ];
+
+ex: 
+
+conta.banco ou conta['banco'] //cod: 012, id: 4, nome: TrybeBank.
+
+conta.banco.id ou conta['banco']['id'] ou conta.banco['id'] ou conta['banco'].id// 4
+
+etc...
+
+
+OBJETOS ENCADEADOS
+
+Segue a mesma lógica, porém de-se colocar um objeto dentro de outro objeto que já está em outro objeto. rs
+
+ex: 
+
+let usuario = {
+  id: 99,
+  email: 'jakeperalta@gmail.com',
+  infoPessoal: {
+    nome: 'Jake',
+    sobrenome: 'Peralta',
+    endereco: {
+      rua: 'Smith Street',
+      bairro: 'Brooklyn',
+      cidade: 'Nova Iorque',
+      estado: 'Nova Iorque',
+    },
+  },
+};
+
+Neste caso, a chave endereço é um objeto dentro da chave infoPessoal que é um objeto dentro do objeto usuario.
+
+para acessar por exemplo a "cidade" podemos dentre várias formas usar a seguinte sintaxe:
+
+usuario.infoPessoal.endereco.cidade;
+ou
+usuario['infoPessoal']['endereco']['cidade'];
+
+
+OBJETO DE ARRAYS
+
+Nesses casos, só conseguimos acessar o valor do array dentro do objeto utilizando seu indice, ou seja: coloca-se o nome do objeto[indice];
+
+ex: 
+
+let moradores = [
+  {
+    nome: 'Luiza',
+    sobrenome: 'Guimarães',
+    andar: 10,
+    apartamento: 1005,
+  },
+  {
+    nome: 'Zoey',
+    sobrenome: 'Brooks',
+    andar: 1,
+    apartamento: 101,
+  },
+];
+
+moradores[1].nome // Zoey
