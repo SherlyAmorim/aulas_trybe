@@ -1,0 +1,27 @@
+FUNÇÕES
+
+Função é um conjunto de instruções que executa uma tarefa ou calcula um valor.
+
+Em uma função só podemos realizar 1 coisa específica.
+
+Sintaxe:
+
+function nomeDaFunção (parametro1, parametro2){
+    //Código que faz alguma coisa
+
+    return algumaCoisa;
+}
+
+Onde os parametros e o return só serão usados em alguns casos.
+
+
+ INVOCANDO UMA FUNÇÃO 
+
+ fora da função:
+
+ nomeDaFunção(); //se não tiver parametros
+
+ nomeDaFunção(valor1, valor2); //esses valores devem ser atribuídos caso a função tenha parâmetros.
+
+ 
+
