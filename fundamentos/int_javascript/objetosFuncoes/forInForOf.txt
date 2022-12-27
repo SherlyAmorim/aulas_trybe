@@ -1,0 +1,68 @@
+FOR IN EM OBJETO
+
+Para utilizar o For/In dentro do objeto utiliza-se a seguinte sintaxe:
+
+for (declaraçãoDeVariavel nomeDeVariavel in nomeDoObjeto){
+    ação.
+}
+
+dessa forma vai me trazer as chaves que meu objeto possui, ex:
+
+let pizzas = {
+    sabor: "Palmito",
+    preco: 39.90,
+    borda: true,
+};
+
+for(let key in pizzas){
+    console.log(key)
+};
+
+// sabor
+// preco
+// borda
+
+se eu quiser o valor dessas chaves, preciso usar a sintaxe:
+
+for(let key in pizzas){
+    console.log(pizzas[key])
+};
+
+se quiser os 2 (chave e valor) usa:
+
+for(let key in pizzas){
+    console.log(pizzas)
+};
+
+Porém nesse caso vai aparecer todos os valores a quantidade de vezes igual a quantidade de chaves que tem no objeto, no caso do exemplo 3x.
+
+
+FOR IN EM ARRAYS
+
+A sintaxe é a mesma, só muda que é um array. Ex: 
+
+let pizzasDoces = ['chocolate', 'banana', 'morango'];
+
+for(let key in pizzasDoces){
+    console.log(key);
+}
+
+Nesse caso acima vai aparecer os indices: 0, 1, 2
+
+for(let key in pizzasDoces){
+    console.log(pizzasDoces);
+}
+
+no caso acima vai aparecer 3x os sabores das pizzas visto que tem 3 valores, se fossem mais apareceriam a quantidade correspondente.
+
+for(let key in pizzasDoces){
+    console.log(pizzasDoces[key]);
+}
+
+Neste caso acima aparecem apenas 1x todos os valores do array
+
+E no caso abaixo, mostra o indice e o valor:
+
+for(let key in pizzasDoces){
+    console.log(key, pizzasDoces[key]);
+}
