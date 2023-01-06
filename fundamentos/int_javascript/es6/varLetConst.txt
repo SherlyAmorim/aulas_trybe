@@ -1,0 +1,6 @@
+VAR, LET e CONST
+
+Qual a diferença?
+
+Quando declaradas na raiz do arquivo, as 3 estão corretas e funcionam da mesma maneira.
+
