@@ -4,6 +4,8 @@ Qual a diferença?
 
 Quando declaradas na raiz do arquivo, as 3 estão corretas e funcionam da mesma maneira.
 
+VAR
+
 Mas não devemos utilizar a declaração Var, visto que ela consegue vazar alguns escopos, neste caso para evitarmos riscos de erros em códigos mais complexos evitamos a utilização dessa declaração.
 
 Com a declaração de variáveis VAR, vc consegue tranquilamente re-declarar uma variável e com isso sobrescrever o valor desta, como no exemplo:
@@ -13,4 +15,6 @@ var userName = 'Lucas';
 console.log(userName); // Resultado: Lucas
 
 Se ao utilizar var, neste caso, fosse utilizado let ou const, daria um erro ao tentar declarar uma variável que já foi declarada.
+
+CONST e LET
 
