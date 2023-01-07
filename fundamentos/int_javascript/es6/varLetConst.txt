@@ -18,3 +18,32 @@ Se ao utilizar var, neste caso, fosse utilizado let ou const, daria um erro ao t
 
 CONST e LET
 
+A única diferença dos dois é o valor da variável declarada como const não pode ser alterado, já quando usamos o let, podemos substituir o valor original atribuído à variável.
+Porém, devemos sempre que possível utilizar o const, os únicos casos em que não utilizaremos ele é em laços de repetições e comparações, visto que necessariamente os valores das variáveis serão reatribuidos, como em: (for, if, while)
+
+
+* Mas quando usamos o const para criar um objeto, o Javascript nos permite alterar as suas propriedades sem, contudo, reatribuir um novo objeto. Acompanhe o exemplo abaixo para entender melhor como funciona:
+
+const userInfo = {
+  name: 'Cláudio',
+  id: '5489-2',
+  email: 'claudio@email.com',
+};
+
+userInfo.name = 'João';
+
+console.log(userInfo); // { name: 'João', id: '5489-2', email: 'claudio@email.com' }
+
+* E isso só dá certo pq estou alterando apenas 1 propriedade do objeto e não a variável em si.
+
+
+* Esse raciocínio também se aplica a um array. Podemos alterá-lo indiretamente adicionando/removendo um novo item sem sobrescrever o que já foi declarado:
+
+
+const technologies = ['Javascript', 'CSS', 'HTML'];
+technologies.push('React');
+console.log(technologies); // [ 'Javascript', 'CSS', 'HTML', 'React' ]
+
+technologies = ['Javascript', 'CSS', 'HTML', 'React']
+console.log(technologies); // Erro
+
