@@ -1,0 +1,70 @@
+ARROW FUNCTIONS
+
+Uma função "normal" é declarada com a seguinte sintaxe:
+.
+.
+.
+function printName() {
+  const myName = 'Lucas';
+  return myName;
+};
+console.log(printName());
+.
+.
+.
+
+Essa mesma função se declarada como arrow function fica com a seguinte sintaxe:
+
+.
+.
+.
+const printName = () => 'Lucas';
+console.log(printName());
+.
+.
+.
+
+Isso porque não existe, no cop da função, nada além do que será retornado.
+Caso tivesse algo a mais, como uma condicional ou um laço de repetição, a sintaxe seria assim: 
+.
+.
+.
+const soma = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(soma(2, 2));
+.
+.
+.
+SIMPLIFICANDO AINDA MAIS:
+.
+.
+.
+const soma = (num1, num2) => num 1 + num 2;
+console.log(soma(2, 2));
+.
+.
+.
+Nesse caso, é uma função para somar 2 valores, então, precisamos passar os parâmetros (entre parênteses)e no corpo da função {que seria entre chaves} precisamos indicar o que ela retornará, que no caso é a soma dos parâmentros que serão passados ao chamar a função.
+Mas com arrow function, podemos eliminar as chaves e a palavra return, escrevendo o "corpo da função" após o =>
+.
+.
+.
+
+PARA USAR ARROW FUNCTION EM FUNÇÕES QUE CRIAM OBJETOS, SINTAXE:
+
+const objetoPessoa2 = (nome, idade) => ({nome: nome, idade: idade})
+
+console.log(objetoPessoa2('Joaquim', 25));
+.
+.
+.
+Nesse caso precisamos colocar o objeto (entre parênteses), se não o código entende que as chaves são o corpo da função e dá erro pela falta da palavra return, que no caso seria com a seguinte sintaxe:
+
+const objetoPessoa = (nome, idade) => {
+    return {
+        nome: nome,
+        idade: idade
+    }
+}
+console.log(objetoPessoa('Joaquim', 25));
