@@ -1,0 +1,9 @@
+TEMPLATE LITERALS
+
+Nos permite criar strings complexas (concatenadas) de forma mais fácil.
+
+SINTAXE:
+
+Deve-se utilizar o sinal de crases no início e no final da frase, e variáveis ou expressões dentro de um ${...}.
+E para quebra de linhas, basta literalmente escrever na linha abaixo.
+Caso não queira escrever na linha de baixo, mas queira que ao imprimir o valor saia na linha abaixo, basta adicionar onde deseja quebrar a linha um \n sem dar espaços.
