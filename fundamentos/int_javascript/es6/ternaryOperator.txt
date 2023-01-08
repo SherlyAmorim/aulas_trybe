@@ -1,0 +1,59 @@
+TERNARY OPERATOR
+
+O operador ternário substitui uma expressão condicional (if/else ou Switch/case), em casos que existão apenas 2 opções de respostas, como:
+
+Verdadeiro e falso;
+Isso ou aquilo.
+
+Em casos que existam 3 ou mais possibilidades não faz sentido usá-lo.
+
+Sintaxe:
+
+`expressão verdadeira ou falsa` ? `retorno se verdadeira` : `retorno se falsa`;
+
+ex: 
+
+const trueExpression = (1 + 1 === 2) ? `isso é verdade` : `isso é mentira`;
+console.log(trueExpression); 
+// isso é verdade
+
+
+const falseExpression = (2 + 2 === 3) ? `isso é verdade` : `isso é mentira`;
+console.log(falseExpression); 
+// isso é mentira
+.
+.
+.
+outro exemplo:
+.
+.
+.
+// Situação em que é mais simples usar o operador ternário:
+
+------------> Sem ternário <----------------
+
+const checkIfElse = (age) => {
+  if (age >= 18) {
+    return `Você tem idade para dirigir!`;
+  } else {
+    return `Você ainda não tem idade para dirigir...`;
+  }
+};
+
+------------> Com ternário <----------------
+
+const checkTernary = (age) => (
+  age >= 18 ? `Você tem idade para dirigir!` : `Você ainda não tem idade para dirigir...`;
+);
+
+.
+.
+.
+
+
+No caso de querer verificar apenas se uma condição é verdadeira, conseguimos simplificar ainda mais, ficando com a seguinte Sintaxe:
+
+let idade = 22;
+
+console.log(idade >= 18 && 'Você já pode dirigir!');
+
