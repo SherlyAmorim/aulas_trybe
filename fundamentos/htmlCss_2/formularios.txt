@@ -1,0 +1,25 @@
+FORMULÁRIO
+
+Para criar um formulário usamos a TAG <form></form> dentro do <body></body>
+
+Um atributo/propriedade que já vem na tag form é a action="".
+
+Nesse atributo devemos informar para onde nosso formulário deve ser enviado, como: outra pag html, por exemplo.
+
+Outra propriedade que usaremos é: method="".
+
+Essa serve para realizar a submissão, ou seja, escolher qual tipo de método http que utilizaremos para enviar.
+
+Que são:
+GET - Os dados são enviados através da URL;
+POST - Envia por outros caminhos sem ser URL.
+
+Dentro do <form> informamos os campos que queremos utilizar em nossos formulários, onde temos:
+
+<input> (principal campo) onde informamos o tipo de entrada de dados que o usuário fará, por padrão vem o type="text", mas existem diversos outros.
+
+é importante acrescentar o campo name="", para para nomear o input.
+
+Outro campo importante é um campo para submeter o form para algum lugar, esse campo normalmente é um botão, o qual utiliza-se a tag:
+<button></button>, a qual deve ter propriedades indicando a ação do botão como: type="submit", que indica que esse botão serve para submeter os dados do formulário.
+
