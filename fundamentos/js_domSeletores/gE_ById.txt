@@ -8,22 +8,40 @@ Esse comando é para acessarmos qualquer ID dentro de um HTML, porém devemos ch
 sintaxe:
 console.log(documente.getElementById('nomeDoID'));
 
+Porém, com essa sintaxe, ele vai me trazer todo o objeto que tem esse ID, por exemplo:
 
-Se quisermos acessar o CONTEÚDO do ID, precisamos colocar .innerHTML no comando.
+caso no HTML eu tenha uma: <div id="teste">Div com <strong>conteúdo</strong> para ser alterado</DIV>
 
-sintaxe:
+Quando eu chamar: console.log(documente.getElementById('teste'));
+
+irá imprimir: <div id="teste">Div com <strong>conteúdo</strong> para ser alterado</DIV>
+
+Se quisermos acessar o CONTEÚDO do ID, precisamos colocar .innerHTML no comando, usando a sintaxe:
+
 console.log(documente.getElementById('nomeDoID').innerHTML);
 
-com esse comando vem tudo que tem dentro do ID, inclusive sub-tags, caso quisermos apenas os textos (ignorando as tags) devemos usar, no lugar do .innerHTML o .innerText.
+Entretanto, com esse comando vem tudo que tem dentro do ID, inclusive sub-tags (se houver),exemplo:
+
+irá imprimir: Div com <strong>conteúdo</strong> para ser alterado
+
+nesse caso podemos ver a sub-tag strong.
+
+Caso quisermos APENAS os textos (ignorando as tags) devemos usar, no lugar do .innerHTML o .innerText.
 
 sintaxe:
 console.log(documente.getElementById('nomeDoID').innerText);
 
+Assim, imprimirá: irá imprimir: Div com conteúdo para ser alterado
 
-Se utilizarmos a sintaxe: console.log(documente.getElementById('nomeDoID').Style);
+
+Existem diversas propriedades que podem ser acessadas pelo getElementById("  ").nomeDaPropriedade. Uma delas é a Style, que ao acessá-la utilizando a sintaxe: 
+
+console.log(documente.getElementById('nomeDoID').Style);
+
 Apresenta todos os estilos aplicados aquele ID, ou seja o CSS.
 
-Alterando conteúdo de um ID com o getElementById
+
+ALTERANDO CONTEÚDO DE UM ID COM getElementById
 
 sintaxe: 
 documente.getElementById('nomeDoID').innerText = "Novo conteúdo"

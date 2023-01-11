@@ -4,13 +4,19 @@ Ai dentro dessa tag podemos colocar códigos JS como console.log(), function, fo
 Porém, como boas práticas não codamos JS dentro do HTML, só chamamos o arquivo para que possam se conectar (assim como com o CSS), e codamos em um arquivo próprio para JS.
 
 sintaxe: 
-<script scr= "nomeDoArquivoJS"></script>
+<script scr= "nomeDoArquivo.js"></script>
 
 Diferente do CSS que chamamos ele dentro do <head>, o JS deve ser chamado no final (último elemento)do <body>, pq é importante que todos os elementos HTML já tenham sido carregados antes de usarmos o JS.
+
+
+OBJETO DOCUMENT 
 
 "objeto document" é onde fica guardada toda estrutura do HTML.
 
 Se no console digitarmos document conseguimos visualizar essa estrutura.
 Assim como se digitarmos document.body conseguimos visualizar a estrutura interna do body.
+
+
+OBJETO ELEMENT 
 
 "objeto element" é a classe base mais geral da qual todos os objetos em um document herdam, isto é, são todas as tags que estão em arquivo html e se transformam em elementos da árvore DOM.
