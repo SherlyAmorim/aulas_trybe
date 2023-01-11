@@ -1,0 +1,25 @@
+TRABALHANDO COM CLASSES
+
+getElementsByClassName esse comando é bem parecido com a getElementById, porém com ele podemos manipular listas e não apenas 1 elemento.
+
+Obstante: o Element's' é no plural nesse caso.
+
+Quando acessamos uma Class com esse comando, é retornado um HTML Colection, mesmo que a Class tenha apenas 1 elemento dentro dela, a class nesse caso é considerada como um array com indices, onde caso tenha apanas 1 elemento nesta classe ele retornará com o indice [0].
+
+Ou seja, para alterar o conteúdo de algum elemento dentro do array, não podemos utilizar apenas o comando innerText como no anterior, pois ele não saberá qual elemento alterar, para isso temos que passar o indice do elemento.
+
+sintaxe:
+document.getElementsByClassName('Nome da Class')[o indice do elemento].innerText = 'Novo conteúdo';
+
+
+Caso queira alterar todos os elementos da lista, podemos manipular da mesma forma que fazemos com um array.
+Declarar em uma variável e percorre-la com um for.
+
+sintaxe:
+
+let NomeDaVariavel = document.getElementsByClassName('Nome da Class');
+for (let index = 0; index < NomeDaVariavel.length; index += 1){
+    NomeDaVariavel[index].innerText = 'Novo Conteúdo';
+}
+
+Como no comando colocamos o [index], ele vai alterar dinâmicamente todos os elementos da lista enquanto for percorrendo eles.

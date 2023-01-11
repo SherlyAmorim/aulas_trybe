@@ -1,0 +1,31 @@
+TRABALHANDO COM ID
+
+
+document.getElementById
+
+Esse comando é para acessarmos qualquer ID dentro de um HTML, porém devemos chamá-lo pelo JS e imprimir no console.log caso formos querer visualizar esse ID.
+
+sintaxe:
+console.log(documente.getElementById('nomeDoID'));
+
+
+Se quisermos acessar o CONTEÚDO do ID, precisamos colocar .innerHTML no comando.
+
+sintaxe:
+console.log(documente.getElementById('nomeDoID').innerHTML);
+
+com esse comando vem tudo que tem dentro do ID, inclusive sub-tags, caso quisermos apenas os textos (ignorando as tags) devemos usar, no lugar do .innerHTML o .innerText.
+
+sintaxe:
+console.log(documente.getElementById('nomeDoID').innerText);
+
+
+Se utilizarmos a sintaxe: console.log(documente.getElementById('nomeDoID').Style);
+Apresenta todos os estilos aplicados aquele ID, ou seja o CSS.
+
+Alterando conteúdo de um ID com o getElementById
+
+sintaxe: 
+documente.getElementById('nomeDoID').innerText = "Novo conteúdo"
+
+Usando essa sintaxe será alterado todo conteúdo antigo pelo novo.
