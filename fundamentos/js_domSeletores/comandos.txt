@@ -8,10 +8,13 @@ sintaxe:
 
 Diferente do CSS que chamamos ele dentro do <head>, o JS deve ser chamado no final (último elemento)do <body>, pq é importante que todos os elementos HTML já tenham sido carregados antes de usarmos o JS.
 
-objeto document é onde fica guardada toda estrutura do HTML.
+"objeto document" é onde fica guardada toda estrutura do HTML.
 
 Se no console digitarmos document conseguimos visualizar essa estrutura.
 Assim como se digitarmos document.body conseguimos visualizar a estrutura interna do body.
+
+"objeto element" é a classe base mais geral da qual todos os objetos em um document herdam, isto é, são todas as tags que estão em arquivo html e se transformam em elementos da árvore DOM.
+
 
 document.getElementById
 
