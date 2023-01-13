@@ -1,0 +1,21 @@
+QUERY SELECTOR
+
+Com o querySelector você pode acessar qualquer elemento, através da sintaxe:
+
+document.querySelector('seletor (caso necessário)' + 'nome do elemento')
+
+A diferença é que ele só retorna 1 elemento, sendo o primeiro que for encontrado a partir da chamada dessa função, ou seja, o primeiro que for encontrado no html e não todos com a mesma caracteristica.
+
+Nesse sentido, o querySelector se assemelha com o getElementById, com diferença que quando for chamar precisa colocar o seletor referente ao elemento:
+
+# para ID 
+. para class
+
+e lembrando que se existirem mais de 1 elemento com a mesma class ou a mesma tag, ele trará apenas o primeiro.
+
+
+Caso vc queira retornar o 1º elemento filho de uma class ou tag específica, vc pode usar as propriedades de seletores do CSS, ou seja, usar a sintaxe:
+
+document.querySelector(".NomeDaClasse tag");
+
+vai retornar o primeiro elemento que está nessa tag que contenha essa class.
