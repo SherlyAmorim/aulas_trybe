@@ -1,0 +1,7 @@
+PREVENT DEFAULT
+
+Este método serve para previnir um comportamento padrão de um evento.
+
+Ex: um botão de submit na hora que recebe o dado de um formulário, ele envia esse dado para algum lugar e atualiza a página.
+
+para que ao enviar a gente não "perca" esses dados, precisamos usar o preventDefaut.
