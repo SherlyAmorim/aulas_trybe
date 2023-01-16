@@ -1,0 +1,26 @@
+A propriedade order nos permite ordenar itens de um determinado container.
+
+por padrão o order possui o valor 0, mas aceita valores negativos.
+
+sintaxe:
+html - 
+
+<body>
+    <ul class="container">
+      <li class="box one">batom</li>
+      <li class="box two">blush</li>
+    </ul>
+  </body>
+
+CSS - 
+
+.one {
+        order: 2;
+     }
+
+.two {
+        order: 1;
+     }
+
+
+Com a estilização acima o elemento blush ficará antes do elemento batom.

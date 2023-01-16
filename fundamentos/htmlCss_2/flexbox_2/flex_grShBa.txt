@@ -1,0 +1,23 @@
+flex-grow, flex-shrink, flex-basis
+
+As três propriedades devem ser expostas em conjunto.
+
+O valor padrão é "auto" mantendo a flexibilidade do item de acordo com o tamanho do container.
+
+flex-basis: define o tamanho base de um item em um container;
+
+flex-shrink: comprime o item para que caiba em um container que não comporte o tamanho real do item;
+
+flex-grow: aumenta o item para ocupar os espaços vagos do container - trabalhando com proporsão entre os itens do container.
+
+sintaxe:
+
+.one {
+        flex-grow: 1;       
+      }
+
+.two {
+        flex-grow: 3;       
+      }
+
+Nesse caso o item da classe two ocupa 75% do tamanho do container enquanto o item da classe one ocupa 25%.

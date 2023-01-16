@@ -1,0 +1,27 @@
+Essa propriedade nos permite utilizar valores de alinhamento, para apenas 1 item (e não para todo o container) utilizando uma classe, pseudoclasse ou id no item:
+
+flex-start - O elemento é posicionado no início do container;
+
+flex-end - O elemento é posicionado no final do container;
+
+stretch - O elemento é posicionado para caber no container;
+
+baseline - O elemento é posicionado na linha de base do container;
+
+center - O elemento é posicionado no centro do container;
+
+
+Sintaxe:
+
+html - 
+<body>
+    <ul class="container">      
+      <li class="change">ELEMENTO TESTE</li>      
+    </ul>
+</body>
+
+CSS - 
+.change {       
+        align-self: center; //flex-start, flex-end, etc.
+      }
+      
