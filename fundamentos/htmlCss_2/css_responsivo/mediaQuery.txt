@@ -1,0 +1,85 @@
+MEDIA QUERY
+
+Técnica introduzida no CSS3 que nos permite utilizar o @media para incluir um bloco de CSS se uma condição for verdadeira.
+
+Sintaxe:
+
+@media screem and (max-width: 768px)
+
+onde:
+
+@media: é uma regra que contém instruções condicionais para direcionar estilos a telas específicas
+
+screem: é o típo de mídia que estamos atuando (all, print, screen, speech...), caso não seja especificado a mídia o padrão é all (ou seja, todas as mídias).
+
+and: operador lógico (and == e, ', == ou' , not == negação), necessário pois precisa passar o tipo de mídia e um outro parâmetro, então esse operador 'concatena' os dois.
+
+(max-width: 768px): 'Media Features' - recursos aos quais fazer a correspondência.
+Ex: 
+* viewport/Page Characteristics: min-width, max-width, height, aspect-ratio....
+
+* Display Quality: resolution, scan, grid...
+
+* Color: inverted-colors, monochrome...
+
+* Interaction: any-pointer, any-hover...
+
+lendo: @media screem and (max-width: 768px)
+Sempre que eu estiver em uma tela que atenda a condição de (largura máxima 768px) o bloco de CSS será ativado.
+
+------------------------------------------------------
+COMO UTILIZAR NO CSS
+
+@media screem and (max-width: 768px){
+    //tudo que estiver nesse espaço atende aos requisitos do Media Query 
+
+    body {
+        background-color: red;
+        font-family: comic sans;
+    }
+}
+
+OBS: Lembrando que tudo que vem após a declaração do Media Query, pode sobrescrevê-lo.
+
+A não ser que coloque a informação: !importante na frente do que não poderá ser sobrescrito.
+
+ex:
+
+@media screem and (max-width: 768px){
+    body {
+        background-color: red !important;
+        font-family: comic sans;
+    }
+}
+
+-------------------------------------------------------
+REGRAS COM OPERADORES LOGICOS
+
+@media screen and (max-width: 768px) and (min-width: 460px) {
+    body {
+        background-color: red !important;
+        font-family: comic sans;
+    }
+}
+
+só obedecerá quando a largura estiver entre 768px e 460px.
+
+-------------------------------------------------------
+UTILIZANDO O MEDIA QUERY NO HTML
+
+A regra é passada no html, porém a estilização continua no CSS.
+
+Sintaxe no html:
+
+<link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px) and (min-width: 460px)>
+
+Sintaxe no html:
+body {
+        background-color: red !important;
+        font-family: comic sans;
+    }
+
+Toda estilização que estiver nesse arquivo css linkado no html obedecerá a regra inserida no Media Query (medi=), inserido no link.
+
+---------------------------------------------------------------------------
+
