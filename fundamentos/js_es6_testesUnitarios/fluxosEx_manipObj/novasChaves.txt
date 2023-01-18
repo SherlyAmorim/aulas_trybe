@@ -1,0 +1,63 @@
+Para adcionar novas chaves a um objeto já criado basta utilizar a notação com . ou [''], conforme abaixo:
+
+const customer1 = {
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
+};
+
+customer1.lastName = 'Faria';
+
+const customer2 = {
+  firstName: 'Maria',
+  age: 23,
+  job: 'Medic',
+};
+
+customer2['lastName'] = 'Silva';
+
+---------------------------------------------------
+No objeto customer1 foi adicionada a chave: lastName com o valor: Faria;
+
+No objeto customer2 foi adicionada a chave: lastName cpm o valor: Silva.
+
+o retorno foi o seguinte:
+
+const customer1 = {
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
+  lastName = 'Faria''Faria'
+};
+
+const customer2 = {
+  firstName: 'Maria',
+  age: 23,
+  job: 'Medic',
+  lastName = 'Silva'
+};
+
+------------------------------------------------------
+
+Caso exista a necessidade de adcionar mais de uma chave ao objeto, o ideal é criar uma função para isso:
+
+
+const customer = {
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
+};
+
+let newKey = 'lastName';
+const lastName = 'Ferreira';
+
+const adicionaPropriedade = (objeto, novaPropriedade, valor) => {
+  objeto[novaPropriedade] = valor;
+};
+
+adicionaPropriedade(customer, newKey, lastName);
+console.log(customer);
+
+
+=> assim podemos passar os novos valores através dos parametros.
+
