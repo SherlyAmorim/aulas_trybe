@@ -1,0 +1,14 @@
+FUNCIONALIDADES DOS MÉTODOS
+
+THROW: Lançar erros;
+
+TRY/CATCH: Capturar erros;
+
+OBJECT.KEYS: Acessas todas as chaves de um objeto, e retorna um Array de Strings;
+
+OBJECT.ENTRIES: Acessar os pares chave-valor de um objeto;
+
+OBJECT.VALUES: Acessas todos os valores de um objeto;
+
+OBJECT.ASSIGN: Copiar um objeto.
+

@@ -1,0 +1,62 @@
+THROW
+
+Para previnir erros podemos usar o throw new error, conforme a sintaxe abaixo:
+
+const sum = (value1, value2) => {
+  if (typeof value1 !== 'number' || typeof value2 !== 'number') {
+    throw new Error('Os valores devem ser numéricos');
+  }
+  return value1 + value2;
+};
+
+console.log(sum(2, '3'));
+
+visto que por se tratar de uma função para somar 2 números, não pode-se usar uma string ('3') como parâmetro.
+
+
+Ao utilizar o throw new Error(), a execução da função sum é interrompida e temos uma mensagem de erro no console, bem como uma indicação da linha onde esse erro ocorre.
+
+
+Definição dos termos utilizados:
+
+* Throw: serve para lançar uma exceção;
+
+* New: serve para criar um objeto personalizado ou nativo do JavaScript.
+
+* Error é um objeto nativo do JavaScript que representa um erro.
+
+
+Error quando chamado com o New: cria uma cópia desse objeto, que será lançada como uma exceção no seu código.
+
+-----------------------------------------------------
+
+TRY / CATCH
+
+* Try: tenta executar o código com sucesso
+
+* Catch: é executado caso um erro seja lançado.
+
+
+
+-----------------------------------------------------
+ex de função utilizando Throw, Try e Cacth.
+
+const verifyIsNumber = (value1, value2) => {
+  if (typeof value1 !== 'number' || typeof value2 !== 'number') {
+    throw new Error('Os valores devem ser numéricos'); // através do construtor `new Error` já sabemos que será lançada a mensagem se algo der errado.
+  }
+};
+
+const sum = (value1, value2) => {  
+  try { 
+    verifyIsNumber(value1, value2);
+    return value1 + value2;  
+  } catch (error) {
+    return error.message;
+  }
+};
+console.log(sum(2, '3'));
+
+// o `try` vai executar a função verifyNumber e retornar a soma caso os parâmetros sejam números
+
+// se o bloco `try` apresentar erro, o `catch` vai capturar esse erro e retornar a mensagem já criada através da propriedade `.message` nativa do objeto Error.
