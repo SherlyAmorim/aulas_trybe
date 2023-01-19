@@ -1,0 +1,13 @@
+TESTES UNITÁRIOS
+
+tem como objetivo testar pequenas partes do seu código de forma isolada, como, por exemplo, uma função. Dessa maneira, você simula as entradas e as saídas que a função deve ter.
+
+
+DIMENSÕES DE QUALIDADE
+
+* Confiança: O sistema é resistente a falhas durante a execução, isto é, não entra em loop, não interrompe a execução por falta de recursos.
+
+* Funcionalidade: O sistema se comporta conforme o que foi definido em seus requisitos.
+
+* Performance: O sistema tem um tempo de resposta adequado e aceitável, mesmo quando submetido a um volume de processamento semelhante a situações reais ou de pico de uso.
+

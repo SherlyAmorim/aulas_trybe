@@ -1,0 +1,34 @@
+DESENVOLVIMENTO ORIENTADO A TESTES
+
+TDD: é uma técnica de desenvolvimento em que você primeiro cria os testes e depois seu código.
+
+Um exemplo interessante onde o TDD pode ser bastante útil é no teste de funções puras, uma vez que elas são mais fáceis de testar e não causam efeitos colaterais.
+
+
+
+
+FUNÇÃO PURA: Quando o resultado é determinado puramente pelos argumentos passados a elas, ou seja, o retorno é sempre previsível.
+Ex: 
+
+function pureFunction(x) {
+    return x * 2 ;
+}
+pureFunction(2) // retorna 4
+
+
+FUNÇÃO IMPURA: Quando a função acessa ou modifica qualquer coisa que não tenha sido passada como parâmetro a ela.
+Ex: 
+
+var count = 0;
+function increaseCount(val) {
+    count += val;
+}
+
+function getSomething() {
+    return count > 0;
+}
+
+* A função {increaseCount} não é pura, pois, apesar de usar o valor do parâmetro, o seu retorno está modificando uma variável que está fora do seu escopo. 
+
+* A função {getSomething} não é pura, pois acessa a variável que não está em seu escopo.
+
