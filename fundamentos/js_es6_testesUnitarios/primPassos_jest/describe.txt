@@ -1,0 +1,12 @@
+O BLOCO DESCRIBE
+
+DESCRIBE: serve para agrupar vários testes, ajudando a melhorar a organização.
+
+é uma função que recebe o teste dentro dela, para dar um título ao teste na saída dele.
+
+ex:
+describe('Requisito 1', () => {
+    it('A função recebe [1, 2, 3] e retorna true', () => {
+        expect(true).toEqual(numeros([1, 2, 3]));
+    });
+});

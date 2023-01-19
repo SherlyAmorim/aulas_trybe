@@ -8,6 +8,8 @@ A função test espera 3 argumentos (parâmetros)
 
 3: TimeOut (opcional) -> indica quanto tempo o Jest deve esperar que o teste execute antes de abortá-lo.
 
+OBS: TEST pode ser substituido por IT 
+
 -----------------------------------------------------
 // sum.js
 const sum = (a, b) => a + b;
@@ -46,4 +48,3 @@ Obs: O nome do arquivo é o arquivo onde encontra-se a função que queremos tes
 
 !!!! Verificar se o nome da variável precisa ter o mesmo nome da função !!!! 
 -------------------------------------------------------
-
