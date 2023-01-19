@@ -1,0 +1,50 @@
+FUNÇÃO TEST (JEST)
+
+A função test espera 3 argumentos (parâmetros)
+
+1: Nome do Teste -> Serve para Identificar o teste e aparece quando o teste for executado;
+
+2: Função contendo as expectativas -> Ou seja, os testes propriamente ditos;
+
+3: TimeOut (opcional) -> indica quanto tempo o Jest deve esperar que o teste execute antes de abortá-lo.
+
+OBS: TEST pode ser substituido por IT 
+
+-----------------------------------------------------
+// sum.js
+const sum = (a, b) => a + b;
+test('sums two values', () => {
+  expect(sum(2, 3)).toEqual(5);
+});
+
+Neste exemplo, tanto a implementação quanto os testes da função estão no mesmo arquivo. Na prática, porém, eles ficarão separados.
+
+------------------------------------------------------
+
+Jest procura por arquivos com as extensões .js, .jsx, .ts e .tsx dentro de uma pasta com o nome __tests__, ou arquivos com o sufixo .test ou .spec.
+
+// sum.js
+const sum = (a, b) => a + b;
+module.exports = sum;
+
+
+// sum.test.js
+const sum = require('./sum');
+test('sums two values', () => {
+  expect(sum(2, 3)).toBe(5);
+});
+
+-------------------------------------------------------
+
+Para conseguirmos utilizar a função em outros arquivos, precisamos dar o comando:
+
+module.exports = NomeDaFunção
+
+E para chamarmos a função no arquivo que rodará o teste utilizamos o comando:
+
+const NomeDaVariavel = require('./NomeDoArquivo')
+
+Obs: O nome do arquivo é o arquivo onde encontra-se a função que queremos testar.
+
+!!!! Verificar se o nome da variável precisa ter o mesmo nome da função !!!! 
+-------------------------------------------------------

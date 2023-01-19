@@ -1,0 +1,38 @@
+EXPECT E MATCHERS 
+
+EXPECT: recebe o valor a ser testado e retorna um objeto representando uma expectation (expectativa). 
+
+MATCHERS: utiliza para verificar se o objeto combina (match) com o resultado esperado, descrito no expect.
+
+Documentação para achar todos os tipos de matchers: https://jestjs.io/docs/expect
+
+------------------------------------------------------
+Machers mais comuns:
+
+* toBe: testa igualdade estrita (tipo e valor);
+    Ex: expect(5).toBe('5')
+        // fail
+-> O retorno foi fail, pois apesar de os dois serem 5 são de tipos diferentes (number e string).
+
+
+* toEqual: testa igualdade de objetos e arrays (acessa cada elemento do objeto ou array)
+    Ex: test('Igualdade de array e object', () => {
+            const arr = [1, 2 ,3];
+            const obj = { a: 1, b: 2, c: 3};
+
+            expect(arr).toBe([1, 2, 3]); 
+                // fails
+            -> Retornou fails pois é um array e devemos usar toEqual
+
+            expect(obj).toBe({ a: 1, b: 2, c: 3});
+                // fails
+            -> Retornou fails pois é um objeto e devemos usar toEqual
+
+            expect(arr).toEqual([1, 2, 3]);
+                // OK
+            -> 
+
+            expect(obj).toEqual({ a: 1, b: 2, c: 3});
+                // OK
+            -> 
+            });

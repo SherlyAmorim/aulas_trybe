@@ -2,3 +2,4 @@ JEST
 
 Sempre tem que criar uma nova pasta para o jest em todos os projetos.
 
+Assistir vídeo na Seção Introdução à JS ES"e Testes Unitários - Aula: Dia 2: Primeiros passos em Jest -> Instalando Jest.
