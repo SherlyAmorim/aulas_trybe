@@ -1,0 +1,4 @@
+JEST
+
+Sempre tem que criar uma nova pasta para o jest em todos os projetos.
+
