@@ -1,0 +1,41 @@
+A Hof forEach apenas percorre o array e não retorn nada, caso queira realizar alguma iteração nos elementos do array é necessário criar uma lógica dentro da hof.
+
+Por exemplo, para transformar uma lista de nomes para letras todas maiusculas, pode ser realizada a seguinte função:
+
+
+
+const pessoasAprovadas = ['Ana Beatriz', 'Caio Nunes', 'Afonso Ribeiro', 'Leonardo Lins']; // lista de nomes
+
+pessoasAprovadas.forEach((nome, index) => {
+  pessoasAprovadas[index] = pessoasAprovadas[index].toUpperCase(); // acessa cada elemento do array e atualiza para letra maiúscula
+});
+
+console.log(pessoasAprovadas); // ['ANA BEATRIZ', 'CAIO NUNES', 'AFONSO RIBEIRO', 'LEONARDO LINS']
+
+
+Ou para fazer uma tabuada de 2:
+
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+numbers.forEach((element) => {
+  console.log(element * 2); // [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+});
+
+
+
+Que tambem pode ser escrito dessa forma:
+
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+numbers.forEach((element) => console.log(element * 2));
+
+
+
+Ou dessa forma:
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const multiply = (element) => {
+  console.log(element * 2);
+}
+
+numbers.forEach(multiply);
