@@ -1,0 +1,64 @@
+Estrutura das HOFs em Arrays
+
+
+Como vimos no doc: higherOrderFunct.txt, existem hofs  NATIVAS do JS para manipulação de array, que são:
+
+* forEach: executa uma ação determinada por você para cada item do array e não possui retorno;
+
+* find: encontra o primeiro elemento que satisfaça alguma condição;
+
+* some: retorna <true> se algum elemento satisfaz alguma condição, caso contrário retorna <false>;
+
+* every: retorna <true> se todos os elementos corresponderem a uma condição, caso contrário retorna <false>.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+As Hofs, apesar de terem objetivos diferentes, possuem a mesma estrutura.
+
+Sintaxe:   array.hofASerExecutada((elementoAtual, index, arrayOriginal) => {}); 
+
+onde:
+
+* array -> Nome do array a ser iterado
+* hofASerExecutada -> Hof que será hofASerExecutada
+* () -> sintaxe da função anônima, se não fosso anônima aqui entraria o nome da função
+===parâmentros===
+* elementoAtual -> O elemento a ser iterado (primeiro parâmetro e o único obrigatório)
+* index -> indice do elemento atual (segundo parâmentro)
+* arrayOriginal -> O array original (terceiro parâmentro e quase não utilizado)
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+O código a ser executado depende da funcionalidade da Hof
+ex: Hof forEach
+
+array.forEach((element, index) => {
+  // código a ser executado
+});
+
+---------------------------------------------------------------------------------------------------------------------------
+Exemplo prático:
+
+
+const arrayOfValues = ['josé', 50, 0.25, { comida: 'Chocolate' }];
+
+arrayOfValues.forEach((element, index) => {
+  console.log(`O elemento atual é: ${element} e possui o index: ${index}`);
+});
+
+Saída:
+
+O elemento atual é: josé e possui o index: 0
+O elemento atual é: 50 e possui o index: 1
+O elemento atual é: 0.25 e possui o index: 2
+O elemento atual é: [object Object] e possui o index: 3
+
+
+
+O código acima está organizado da seguinte maneira:
+
+arrayOfValues: nome do array que será percorrido;
+.forEach: a HOF usada. Poderia ser outra HOF, como .find, .some, .every, entre outras, que a estrutura seria a mesma;
+element: valor do elemento do array;
+(element, index) => { /* código */ }: função a ser executada.
