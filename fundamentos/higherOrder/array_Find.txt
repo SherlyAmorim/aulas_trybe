@@ -1,0 +1,19 @@
+Array.find
+
+A função find é utilizada para achar o primeiro elemento que satisfaça a condição passada e retorne o primeiro valor do array que corresponda a essa condição. Caso ele não encontre, retorna <undefined>.
+
+ex:
+
+const idades = [18, 21, 42, 20, 19, 21, 30, 73, 82, 45, 48, 50];
+
+idades.find((idade) => idade < 20); 
+
+O retorno será 18.
+
+
+const idades = [18, 21, 42, 20, 19, 21, 30, 73, 82, 45, 48, 50];
+
+idades.find((idade) => idade === 33); 
+
+O retorn será undefined, pois não existe valor correspondente a condição.
+
