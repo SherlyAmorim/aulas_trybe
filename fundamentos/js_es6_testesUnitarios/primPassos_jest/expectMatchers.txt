@@ -9,7 +9,7 @@ Documentação para achar todos os tipos de matchers: https://jestjs.io/docs/exp
 ------------------------------------------------------
 Machers mais comuns:
 
-* toBe: testa igualdade estrita (tipo e valor);
+* toBe: testa igualdade estrita de tipos primitivos(tipo e valor);
     Ex: expect(5).toBe('5')
         // fail
 -> O retorno foi fail, pois apesar de os dois serem 5 são de tipos diferentes (number e string).
@@ -36,3 +36,13 @@ Machers mais comuns:
                 // OK
             -> 
             });
+
+------------------------------------------------------
+ARRAYS
+
+* toContain: Verificar se existe um item específico no array;
+
+*toContainEqual: Para itens com estrutura mais complexa;
+
+*toHaveLangth: Verifica tamanho do array ou string;
+
