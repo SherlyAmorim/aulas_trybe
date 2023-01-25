@@ -1,0 +1,19 @@
+Array.some e Array.every
+
+As funções some e every são parecidas e retornam valores booleanos.
+
+<some> retorna true se ao menos um elemento de um array satisfaz a uma condição.
+
+<every> retorna true se todos os elementos de um array satisfazem a uma condição.
+
+
+Array.some
+
+Esse Hof deve ser usado para quando queremos descobrir se existe pelo menos 1 elemento que atenda a condiçao estipulada.
+Lembrando que o retorno será apenas <true> caso encontre, não traz dados, apenas informa que existe.
+
+
+Array.every
+
+Esse Hof deve ser usado para quando queremos descobrir se todos os elementos do array atende a condiçao estipulada.
+Lembrando que o retorno será apenas <true> caso todos os elementos atendam, mas não traz dados, apenas informa que existe.

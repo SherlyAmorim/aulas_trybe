@@ -1,0 +1,48 @@
+HOFS
+
+São funções que recebem um função como parâmetro ou que retornam uma função.
+
+Algumas funções Nativas:
+
+* forEach: Executa uma ação para cada item do array;
+* Map: Percorre o array e executa uma função para cada elemento tbm;
+
+* find: Encontra o primeiro elemento que satisfaça alguma condição;
+
+* some: retorna <true> se algum elementosatisfizer alguma condição, ou <false> caso contrário;
+
+* every: retorna <true> se todos os elementos corresponderem a uma condição, ou <false> caso contrário;
+
+* filter: traz todos os elementos que satisfazem uma condição;
+
+* sort: Ordena o array;
+
+* reduce: Reduz o array;
+
+---------------------------------------------------------------------------------------------------------------------------
+forEach x Map
+
+São primos... sendo que:
+
+forEach: alternativa para o loop for.
+Map: realiza operações de tranformação/alteração no itens do array e ao final traz uma nova lista com a mesma quantidade de itens da lista original (a saída é um novo array).
+
+---------------------------------------------------------------------------------------------------------------------------
+
+HOFS
+
+Uma função hof já conhecida é a assEventListerner, pois ela recebe uma função como parâmentro.
+
+Ex:
+
+const button = document.querySelector('#signup-button');
+
+const registerUser = () => {
+  console.log('Registrado com sucesso!');
+};
+
+button.addEventListener('click', registerUser);
+
+
+Neste exemplo pode-se verificar que a addEventListener está recebendo como parametros: o evento 'click' e a função registerUser (declarada linhas acima).
+
