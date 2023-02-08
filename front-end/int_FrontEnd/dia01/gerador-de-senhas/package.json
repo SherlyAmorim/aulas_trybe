@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite --open"
+    "dev": "vite --open",
+    "lint": "eslint ./src"
   },
   "author": "Sherly Amorim",
   "license": "ISC",
@@ -13,5 +14,8 @@
     "nanoid": "^4.0.1",
     "vite": "^4.1.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@trybe/eslint-config-frontend": "^1.8.3"
+  }
 }
