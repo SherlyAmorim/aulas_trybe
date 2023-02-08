@@ -11,6 +11,7 @@
   "author": "Sherly Amorim",
   "license": "ISC",
   "dependencies": {
+    "clipboard-copy": "^4.0.1",
     "nanoid": "^4.0.1",
     "vite": "^4.1.1"
   },
