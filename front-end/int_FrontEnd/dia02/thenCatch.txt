@@ -1,0 +1,25 @@
+RETORNO DE PROMISES
+
+* Then: Usado para tratar retorno de sucesso;
+* Catch: Usado para tratar retorno de falha.
+
+Sintaxe -> then:
+
+função()
+    .then((response) => {});
+
+Onde:
+- response: é a resposta do código assíncrono, ou seja, o mesmo valor do resolve.
+- { }: é o que queremos executar com o retorno.
+
+
+Sintaxe -> catch:
+
+função()
+    .catch((error) => {});
+
+Onde:
+- error: é a resposta do código assíncrono, ou seja, o mesmo valor do resolve.
+- { }: é o que queremos executar com o retorno.
+
+Obstante: Lembrando que no error do catch, podemos chamar ${error.message} que retorna a mesnagem que passamos no new Error(``) dentro da função assíncrona.
