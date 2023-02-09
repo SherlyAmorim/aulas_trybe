@@ -1,0 +1,5 @@
+TRATAMENTO DE ERROS COM REQUISIÇÃO
+
+Como o método Fetch() retorna uma promise, basta encadear em .catch() após os .then() e tratar o erro.
+
+Importante: Pode-se encadear quantos .then() forem necessários, mas o .catch() basta 1 que ele tratará qualquer erro que surgir.

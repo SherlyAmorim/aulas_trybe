@@ -1,0 +1,14 @@
+CONFIGURAÇÃO DE UMA REQUISIÇÃO { }
+
+Existem diversas configurações, por isso é necessário sempre ler a documentação da API para saber as configurações necessárias.
+
+Porém, as mais comuns são:
+
+* Method -> É o metodo http de requisição, que é a comunicação entre o front-end e o back-end.
+Por padrão essa requisição vem como GET, mas tem a opção de POST e precisa ver na documentação qual deve ser usada;
+
+* Headers -> O cabeçalha, são as informações adicionais que podem ser passadas em cada requisição;
+
+* Body -> O corpo da requisição, ou seja, os dados que serão passados para a API.
+
+Importante: O body tem que ser em formato txt, neste caso deve ser utilizado um metodo para realizar essa transformação. Normalmente utiliza-se JSON.stringify
