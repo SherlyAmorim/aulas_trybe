@@ -1,0 +1,26 @@
+PROMISES
+
+São objetos usados para processamento assíncrono.
+
+Podem ter 3 estados:
+
+* Pending: Enquanto aguarda a execução do código assincrono;
+* Fulfilled: Quando a operação foi realizada/resolvida com sucesso;
+* Rejected: Quando a operação da algum erro.
+
+
+---------------------------------------------------------------------------
+
+CONSTRUINDO UMA PROMISE
+
+Sintaxe:
+
+new Promise((resolve, reject) => {});
+
+Recebe 2 parâmetros padrão (resolve, reject).
+
+Obs: O retorno do Reject pode ser qualquer valor, mas por boas práticas devemos retornar um objeto de erro.
+    reject(new Error (`mensagem do erro`))
+
+
+--------------------------------------------------------------------------
