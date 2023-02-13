@@ -1,4 +1,5 @@
 import './style.css';
+import '/utils.updateUI.js';
 
 import {
   fillUsersSelect,
@@ -6,7 +7,7 @@ import {
   fillFeaturedPostComments,
   clearPageData,
   fillErrorMessage,
-} from './utils/updateUI';
+} from '../utils/updateUI';
 
 const usersSelect = document.querySelector('#users-select');
 
