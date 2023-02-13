@@ -1,0 +1,26 @@
+FETCH()
+
+Retorna uma promise independente do resultado.
+
+Serve para realizar comunicação entre aplicações Front-end com outras aplicações através de APIs.
+
+Sintaxe: 
+
+fetch(URL, { })
+
+Onde:
+* URL (obrigatório): É o endereço da API que será utilizada;
+* { } (opcional): São as configurações requisitadas (ou não) pelo API, tem sempre que olhar na documentação, pois se tiver as configurações devem ser utilizadas.
+
+----------------------------------------------------------------------------------
+
+Como a fetch() retorna uma promise, então precisa ser tratada utilizando o .then() e o .catch()
+
+Precisa tbm utilizar o json() para filtrar as informações que necessitamos, se não for utilizado vem tudo, ou seja, coisas desnecessárias.
+Porém, o metodo response.json(), tbm retorna uma promise, ou seja, tbm é necessário tratá-la utilizando o .then() e a Sintaxe fica da seguinte forma:
+
+fetch(URL, { })
+    .then(response => response.json())
+    .then(data => { });
+
+Onde: "data" é o objeto esperado pela API.

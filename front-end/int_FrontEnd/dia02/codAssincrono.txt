@@ -1,0 +1,13 @@
+CÓDIGO ASSÍNCRONO
+
+Executa em paralelo ao código principal e o principal não precisa aguardar o retorno dele para continuar.
+
+Sintaxe:
+
+setTimeout(() => { }, 1000);
+
+Explicação:
+
+setTimeout recede 2 parâmetros, onde:
+1º é a função que deseja executar;
+2º é o tempo em milissegundos para a execução da função, ou seja o 1000 da seintaxe é 1000 milissegundos que equivale a 1 segundo (mas esse tempo é determinado pelo Dev, não é regra ser o 1000).

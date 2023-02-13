@@ -1,0 +1,13 @@
+FINALLY
+
+Serve para executar algum código após o retorno da promise independente se for then ou catch.
+É um método que não recebe parâmetros.
+
+Sintaxe:
+
+função( )
+    .then()
+    .catch()
+    .finally(() => { 
+        código a ser executado;
+    })
