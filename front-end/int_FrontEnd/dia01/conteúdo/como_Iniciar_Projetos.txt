@@ -22,9 +22,15 @@ Adicionar um bundler dev-server
 Versionar o código
 
 [ ] Crie um arquivo .gitignore na raiz do projeto e, nele, adicione node_modules;
+Se for um novo repositório:
 [ ] Digite o comando git init para adicionar o versionamento de código no projeto;
 
 
 Instalar e configurar o ESLint
 
-[ ] Execute o comando npm init @eslint/config e siga o passo a passo que aparecerá no terminal.
+[ ] Execute o comando npm install @trybe/eslint-config-frontend;
+[ ] Crie um arquivo .eslintrc.json na raiz do projeto e, nele, adicione: 
+{
+  "extends" : "@trybe/eslint-config-frontend"
+}
+[ ] Adicionar a chave "lint": "eslint ./src" à chave "scripts" do arquivo package.json;
