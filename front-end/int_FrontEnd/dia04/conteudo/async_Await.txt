@@ -22,3 +22,9 @@ evento.addEventListener("click", async () => {
 
 observe que nesse novo formato remove-se os .then() mas temos que colocar o resultado das promises em constantes (const response e const data).
 
+
+na função -
+
+async function bar() {
+  return 1;
+}
