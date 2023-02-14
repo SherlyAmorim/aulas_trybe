@@ -6,6 +6,8 @@ Caso a promise retorne Fulfilled o bloco try é executado, caso dê algum erro (
 
 Sintaxe:
 
+Em uma callback -
+
 evento.addEventListener("click", async () => {
 
     try {
@@ -18,3 +20,14 @@ evento.addEventListener("click", async () => {
         ou o que quiser que retorne aqui..
     }    
 })
+
+em funções normais -
+
+const cep = '30130-010'; 
+try {
+  const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+  const data = await response.json();
+  console.log(data);
+} catch(error) {
+  console.log(error)
+}
