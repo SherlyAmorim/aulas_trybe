@@ -1,0 +1,20 @@
+TRY e CATCH
+
+Funcionam como um if e else para tratamento de promises.
+
+Caso a promise retorne Fulfilled o bloco try é executado, caso dê algum erro (Rejected), o bloco try é ignorado e executa o bloco catch.
+
+Sintaxe:
+
+evento.addEventListener("click", async () => {
+
+    try {
+        const response = await fetch(URL);
+        const data = await response.json();
+        resto da função....
+
+    } catch (error) {
+        throw new error = `${error.message}`;
+        ou o que quiser que retorne aqui..
+    }    
+})

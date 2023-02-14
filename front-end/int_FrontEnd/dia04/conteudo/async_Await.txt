@@ -1,0 +1,24 @@
+ASYNC - AWAIT
+
+É uma nova forma de indicar que o código será assincrono.
+
+Com Async e Await soubstituimos o encadeamento do .then()
+
+O Async deve ser declarado antes no nome da constante ou dentro de uma callback;
+
+Já o Await deve ser declarado antes do fetch() ou antes de qualquer função que retorne uma promise como no caso do response.json().
+
+O Await significa: aguarde até que a promise seja resolvida, mas o Await só vai funcionar se o Async for declarado no inicio da função.
+
+Sintaxe:
+
+na callback - 
+
+evento.addEventListener("click", async () => {
+    const response = await fetch(URL);
+    const data = await response.json();
+    resto da função....
+})
+
+observe que nesse novo formato remove-se os .then() mas temos que colocar o resultado das promises em constantes (const response e const data).
+
