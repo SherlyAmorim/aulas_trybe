@@ -4,7 +4,9 @@ PASSO A PASSO PARA CRIAR UMA APLICAÇÃO REACT
 
 2: Acessar o diretório criado com: cd nome-da-aplicacao
 
-3: Executar a aplicação com: npm start
+3: Rodar um: npm install
 
-4: Abrir outra aba do terminal para utilizar quando precisar, pois a aplicação precisa ficar rodando.
+4: Executar a aplicação com: npm start
+
+5: Abrir outra aba do terminal para utilizar quando precisar, pois a aplicação precisa ficar rodando.
 
