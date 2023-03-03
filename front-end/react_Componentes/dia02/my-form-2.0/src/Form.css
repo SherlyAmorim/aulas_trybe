@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+h4 {
+    margin-left: 10px;
+}
+.textArea {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+    margin: 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px;    
+}
