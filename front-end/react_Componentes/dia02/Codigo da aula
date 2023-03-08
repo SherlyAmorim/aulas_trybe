@@ -1,0 +1,128 @@
+link: https://codesandbox.io/s/aula-3-2-rhvng7?file=/src/Input.jsx:0-3041
+
+
+
+import React from "react";
+
+// Vou controlar o input
+// 1. preciso pegar o evento do input: onChange
+// 2. crie uma funcao para pegar o event: handleChange
+// 3. preciso para guardar esses valores
+// 4. controlar o meu input, pegando o value do input
+// 5. preciso atualizar o estado com setState, para atualizar o input
+
+// estado controlado
+// criar um handleChange
+// passar o state para o value do input
+// chamar a funcao setState no handleChange
+
+// handleChangeGenerico
+// ele precisa do name no input
+// handleChange = ({ target }) => {
+//   this.setState({
+//     [target.name]: target.value
+//   });
+// };
+
+// como passar informacoes do filho para o Pai
+// primeiro vc cria uma funcao no componente Pai (funcao callback)
+// passa a funcao como props
+// chama ela no componente filho
+
+class PasswordInput extends React.Component {
+  constructor() {
+    super();
+
+    // estado inicial
+    this.state = {
+      inputType: "password",
+      emailInput: "",
+      passwordInput: ""
+    };
+
+    this.toggleShowPassword = this.toggleShowPassword.bind(this);
+  }
+
+  toggleShowPassword() {
+    const { inputType } = this.state;
+    this.setState({
+      inputType: inputType === "password" ? "text" : "password"
+    });
+  }
+
+  // handleChange = (event) => {
+  //   console.log(event.target.value);
+
+  //   // validando para o usuario nao conseguir digitar A
+  //   if (event.target.value.includes("A")) {
+  //     console.log("Não pode ter A");
+  //   } else {
+  //     // estou atualizando o estado do input
+  //     this.setState({
+  //       emailInput: event.target.value
+  //     });
+  //   }
+  // };
+
+  // DRY = dont repeat yourself
+
+  // handleChange = (event) => {
+  //   this.setState({
+  //     emailInput: event.target.value
+  //   });
+  // };
+
+  // handleChangePassword = (event) => {
+  //   this.setState({
+  //     passwordInput: event.target.value
+  //   });
+  // };
+
+  handleChangeGenerico = (event) => {
+    console.log(event.target.name);
+
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  };
+
+  render() {
+    return (
+      <>
+        <label htmlFor="email">
+          Email:
+          <input
+            type="text"
+            id="email"
+            name="emailInput"
+            // onChange={this.handleChange}
+            onChange={(evento) => this.handleChangeGenerico(evento)}
+            value={this.state.emailInput}
+          />
+        </label>
+        <br />
+        <label htmlFor="password">
+          Senha:
+          <input
+            type={this.state.inputType}
+            id="password"
+            name="passwordInput"
+            onChange={this.handleChangeGenerico}
+            value={this.state.passwordInput}
+          />
+        </label>
+        <button onClick={() => this.toggleShowPassword()}>Mostrar</button>
+        <br />
+        <br />
+        <br />
+        <button
+          onClick={() => this.props.funcaoCallback(this.state.emailInput)}
+        >
+          Enviar para o componente pai
+        </button>
+      </>
+    );
+  }
+}
+
+export default PasswordInput;
